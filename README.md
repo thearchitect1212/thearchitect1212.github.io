@@ -1,5 +1,6 @@
 # Said Moussadeq
 **Software Engineer | Cybersecurity Specialist | Data Scientist**
+Davenport, Florida | saidmsdq05@gmail.com
 
 ## About Me
 
