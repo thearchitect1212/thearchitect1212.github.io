@@ -3,7 +3,7 @@ name: Deploy GitHub Pages
 on:
   push:
     branches:
-      - main
+      - main  # Use your default branch
 
 jobs:
   build-deploy:
@@ -16,17 +16,17 @@ jobs:
     - name: Setup Ruby
       uses: ruby/setup-ruby@v1
       with:
-        ruby-version: 3.0 # Update to Ruby 3.0 or higher to avoid version conflicts
+        ruby-version: 3.0  # Use Ruby version 3.0 or higher
 
-    - name: Install Jekyll and Bundler
+    - name: Install dependencies
       run: |
-        gem install bundler jekyll
+        bundle install  # This installs the dependencies from the Gemfile
 
     - name: Build the site
-      run: bundle exec jekyll build
+      run: bundle exec jekyll build  # Build the site using Jekyll
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./_site
+        publish_dir: ./_site  # Ensure this points to the folder where Jekyll outputs the site
