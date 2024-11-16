@@ -71,9 +71,3 @@ This project analyzes the alarming rise in drug overdose death rates across vari
 2. Automate periodic data updates to track real-time trends.
 3. Integrate machine learning to predict future overdose trends.
 
----
-
-## How to Run
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/username/project-repo.git
