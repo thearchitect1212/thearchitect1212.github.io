@@ -22,5 +22,3 @@ This project addresses the challenges of detecting fraudulent transactions in a 
 - Higher prevalence of fraud in specific merchant categories, such as online and luxury purchases.
 - Effective fraud detection through targeted classification models.
 
-## Files
-- `Credit_Card_Fraud_Detection.md`
