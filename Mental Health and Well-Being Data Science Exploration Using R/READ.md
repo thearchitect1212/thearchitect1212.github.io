@@ -72,8 +72,6 @@ The following datasets were used in this project:
 ## Future Steps
 This project highlights the need for more comprehensive, longitudinal studies to explore causality in mental health. Additionally, the use of wearables and AI technology could revolutionize our understanding and management of mental health.
 
-## How to Access the Report
-- The full report is available in PDF format: [The_Rise_of_Mental_Illness_Report.pdf](./The_Rise_of_Mental_Illness_Report.pdf)
 
 ## Conclusion
 Data science offers powerful tools to analyze and understand the factors contributing to mental illness. By leveraging these insights, we can develop more effective, data-driven strategies to improve mental well-being.
