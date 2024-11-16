@@ -1,78 +1,79 @@
-# The Rise of Mental Illness: Data Science to the Rescue
-**Author**: Said Moussadeq  
-**Date**: February 9, 2024  
+# Analyzing the Rise in Drug Overdose Death Rates Using API Data Extraction
 
 ## Overview
-This project focuses on understanding the rise of mental illness using data science. By analyzing various datasets, the goal is to uncover potential environmental contributors to mental health, such as sleep, diet, substance use, social media, and isolation. The study seeks to provide insights into how these factors influence mental well-being and explores data-driven solutions to address the mental health crisis.
+This project analyzes the alarming rise in drug overdose death rates across various demographic groups using real-time data from the CDC's API. By focusing on patterns over time, it sheds light on the growing public health crisis and highlights demographic disparities and substance trends.
 
-## Research Questions
-The project aims to answer the following key questions:
-- Is there a link between sleep quality, overall well-being, and mental health?
-- How does diet influence mental health?
-- Could the use of substances be a significant factor in the deterioration of mental health?
-- Is there a connection between social media addiction and poor mental health?
-- How does social isolation affect mental health?
+---
 
-## Approach
-Using data science techniques such as covariance, correlation, and regression analysis, the project examines the relationship between environmental factors and mental health. Visualizations such as scatter plots, bar charts, and correlation matrices are employed to better understand the data and the relationships between variables.
+## Key Features
+- **API Integration**: Automated data extraction from the CDC's API for up-to-date information.
+- **Trend Analysis**: Explores year-over-year changes in overdose deaths.
+- **Demographic Insights**: Identifies how overdose rates differ by age, gender, and region.
+- **Substance Trends**: Analyzes the prevalence of specific drugs contributing to deaths.
 
-## Data Sources
-The following datasets were used in this project:
+---
 
-1. **Social Media and Well-being**  
-   - Study on digital behavior on social media and its effects on mental health.
-   - Year: 2022  
-   - Location: Kisii University College Faculty of Health Sciences  
-   - [Link to Dataset](https://data.mendeley.com/datasets/jxkcm7s638/1)
+## Dataset
+- **Source**: CDC API for drug overdose mortality data.
+- **Size**: National and state-level data across decades.
+- **Features**:
+  - Year
+  - Age Group
+  - Gender
+  - Substance Type
+  - Mortality Rates
+- **Preprocessing**:
+  - Filtered out incomplete or irrelevant data fields.
+  - Standardized feature names for consistency.
+  - Addressed missing values by imputing median values for numerical data.
 
-2. **Meaning in Life: Predictive Factor for Loneliness**  
-   - Scores for predictors of loneliness, including health status and social connectedness.
-   - Year: 2020  
-   - Location: Universitat de Barcelona  
-   - [Link to Dataset](https://data.mendeley.com/datasets/zy39mdzxpg/2)
+---
 
-3. **Getting More Sleep Linked to Higher Well-Being**  
-   - Evaluates the relationship between sleep and well-being.  
-   - Year: 2014  
-   - Location: U.S.  
-   - [Link to Dataset](https://news.gallup.com/poll/181583/getting-sleep-linked-higher.aspx)
+## Methodology
+1. **Data Retrieval**:
+   - Accessed the CDC’s API using Python’s `requests` library.
+   - Extracted data as JSON and converted it into a structured DataFrame.
+2. **Exploratory Data Analysis (EDA)**:
+   - Visualized trends using line plots and bar charts.
+   - Compared rates across age groups and substances.
+3. **Insights Extraction**:
+   - Focused on identifying sharp increases or decreases over time.
+   - Explored regional variations to determine high-risk areas.
 
-4. **Mental Health Disorders and Substance Use**  
-   - Prevalence of mental health and substance use disorders.  
-   - Year: 2017  
-   - [Link to Dataset](https://cdn.mdedge.com/files/s3fs-public/JFP06809400.PDF)
+---
 
-5. **Food and Mental Health**  
-   - Relationship between food consumption, stress, and depressive symptoms among university students.  
-   - Year: 2014  
-   - Location: UK  
-   - [Link to Dataset](https://www.semanticscholar.org/paper/Food-and-mental-health%3A-relationship-betweenfood-Ansari-Adetunji/7089d0982e871d4024e26d04a9e00d478c418e81)
+## Key Insights
+- **Rising Trends**: Overdose deaths have increased steadily, particularly among younger age groups.
+- **Opioid Epidemic**: Synthetic opioids like fentanyl contribute significantly to the rise in mortality rates.
+- **Regional Disparities**: Certain regions, such as the Midwest and Appalachia, have been disproportionately affected.
 
-## Libraries Used
-- `readxl`
-- `tidyverse`
-- `ppcor`
-- `readr`
-- `dplyr`
-- `ggplot2`
-- `GGally`
-- `reshape2`
+---
 
-## Key Visualizations
-- Scatter Plot: Used to analyze relationships between variables such as sleep, loneliness, and exercise.
-- Bar Chart: Used to represent data on food consumption and depressive symptoms.
-- Correlation Matrix: Helps visualize the strength and direction of relationships between various factors.
+## Technologies Used
+- **Programming Language**: Python
+- **Libraries**: Pandas, NumPy, Matplotlib, Seaborn
+- **API Integration**: CDC's RESTful API
 
-## Findings
-- **Loneliness and Mental Health**: A moderate negative correlation suggests that better mental health is associated with less loneliness.
-- **Sleep and Well-being**: A strong positive correlation was observed between the number of hours slept and well-being index scores.
-- **Substance Use and Mental Health**: Individuals with substance use disorders experience significantly higher rates of mental health conditions like schizophrenia and bipolar disorder compared to the general population.
-- **Food and Mental Health**: Eating unhealthy foods such as fast food and sweets is associated with higher depressive symptoms, while healthier foods like fruits and vegetables are linked to better mental health.
+---
 
-## Future Steps
-This project highlights the need for more comprehensive, longitudinal studies to explore causality in mental health. Additionally, the use of wearables and AI technology could revolutionize our understanding and management of mental health.
+## Applications
+- **Public Health**:
+  - Helps policymakers allocate resources effectively.
+  - Assists in identifying high-risk populations for targeted interventions.
+- **Healthcare**:
+  - Aids providers in understanding substance abuse trends.
+  - Supports prevention and treatment initiatives.
 
+---
 
-## Conclusion
-Data science offers powerful tools to analyze and understand the factors contributing to mental illness. By leveraging these insights, we can develop more effective, data-driven strategies to improve mental well-being.
+## Future Directions
+1. Expand analysis to include socioeconomic factors like income and education.
+2. Automate periodic data updates to track real-time trends.
+3. Integrate machine learning to predict future overdose trends.
 
+---
+
+## How to Run
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/username/project-repo.git
